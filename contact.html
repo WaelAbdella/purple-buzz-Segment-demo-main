@@ -11,6 +11,32 @@
       </script>
     <!--Segment Snippet End-->
 
+    <script>
+        var contactMessage = function () {
+        var vemail = document.getElementById('floatingemail').value
+        var vfirst_name = document.getElementById('floatingname').value
+        var vlast_name = document.getElementById('floatingsubject').value
+        var vphone = document.getElementById('floatingphone').value
+        var vcompany = document.getElementById('floatingcompany').value
+        var vtextarea = document.getElementById('floatingtextarea').value
+
+        analytics.identify({
+        first_name: vfirst_name,
+        last_name: vlast_name,
+        email: vemail,
+        phone: vphone,
+        company:{
+            employee_count: vcompany
+        },
+        country: vtextarea
+        })
+
+
+
+    </script>
+
+
+
     <title>Purple Buzz - Contact Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -193,15 +219,15 @@ https://templatemo.com/tm-561-purple-buzz
 
                     <div class="col-12">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
-                            <label for="floatingsubject light-300">Subject</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Last Name">
+                            <label for="floatingsubject light-300">Last Name</label>
                         </div>
                     </div><!-- End Input Subject -->
 
                     <div class="col-12">
                         <div class="form-floating mb-3">
-                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
-                            <label for="floatingtextarea light-300">Message</label>
+                            <textarea class="form-control light-300" rows="8" placeholder="country" id="floatingtextarea"></textarea>
+                            <label for="floatingtextarea light-300">country</label>
                         </div>
                     </div><!-- End Textarea Message -->
 
