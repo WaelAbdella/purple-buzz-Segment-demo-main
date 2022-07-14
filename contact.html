@@ -50,15 +50,18 @@ https://templatemo.com/tm-561-purple-buzz
     phone: vphone,
     company:{
         employee_count: vcompany
+    },
+    campaign: {
+      name: "Testing campaign info"
     }
-    });
+});
 
     analytics.group("12345",
     {
         industry: 'Technology'
     });
 
-    analytics.track("Contact Us Clicked", {
+    analytics.track("Contact Us clicked", {
         page_type: "Home",
         user_type: "marketing qualified lead"
     });
