@@ -43,7 +43,9 @@ https://templatemo.com/tm-561-purple-buzz
     var vcompany = document.getElementById('floatingcompany').value
     var vtextarea = document.getElementById('floatingtextarea').value
 
-    analytics.identify("4321",{
+    analytics.identify("4321",
+    {
+    traits:{
     first_name: vfirst_name,
     last_name: vlast_name,
     email: vemail,
@@ -54,6 +56,7 @@ https://templatemo.com/tm-561-purple-buzz
     campaign: {
       name: "Testing campaign info"
     }
+}
 });
 
     analytics.group("12345",
