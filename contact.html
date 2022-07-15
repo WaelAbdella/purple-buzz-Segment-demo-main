@@ -64,9 +64,17 @@ https://templatemo.com/tm-561-purple-buzz
 
     analytics.track("Contact Us clicked", {
         page_type: "Home",
-        user_type: "marketing qualified lead"
-    });
-}
+        user_type: "marketing qualified lead",
+        properties:{
+    'email': 'peter@example.com',
+  },
+  context:{
+    'traits': {
+    'firstname': 'Peter',
+    'lastname': 'Gibbons'
+  }
+,}});
+    }
 </script>
 
 
