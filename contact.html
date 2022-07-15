@@ -45,17 +45,20 @@ https://templatemo.com/tm-561-purple-buzz
 
     analytics.identify("4321",
     {
+        campaign: {
+          name: "Testing campaign info"
+        },
+        company:{
+            employee_count: vcompany
+        },
     first_name: vfirst_name,
     last_name: vlast_name,
     email: vemail,
     phone: vphone,
-    company:{
-        employee_count: vcompany
-    },
-    campaign: {
-      name: "Testing campaign info"
-    }
 });
+
+
+
 
     analytics.group("12345",
     {
@@ -64,17 +67,9 @@ https://templatemo.com/tm-561-purple-buzz
 
     analytics.track("Contact Us clicked", {
         page_type: "Home",
-        user_type: "marketing qualified lead",
-        properties:{
-    'email': 'peter@example.com',
-  },
-  context:{
-    'traits': {
-    'firstname': 'Peter',
-    'lastname': 'Gibbons'
-  }
-,}});
-    }
+        user_type: "marketing qualified lead"
+    });
+}
 </script>
 
 
